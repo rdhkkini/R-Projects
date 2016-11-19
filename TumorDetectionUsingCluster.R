@@ -9,9 +9,7 @@ str(healthyCellMatrix) # LARGE DATA SET
 # Display the image in grey-scale
 image(healthyCellMatrix, 
       axes = FALSE, 
-      col = grey(seq(0,1,length = 256)
-                 )
-      )
+      col = rainbow(k))
 
 # Convert into a vector to use for the cluster 
 healthyCellVector <- as.vector(healthyCellMatrix)
